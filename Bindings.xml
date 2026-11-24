@@ -1,0 +1,5 @@
+<Bindings>
+  <Binding name="TALLYMARK_TOGGLE" header="TALLYMARK" category="ADDONS">
+    Tallymark_Toggle()
+  </Binding>
+</Bindings>

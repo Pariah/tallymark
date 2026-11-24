@@ -1,0 +1,42 @@
+## Interface: 16001
+## Title: |cffeda347Tally|rmark
+## Notes: Lockouts, quests, currencies, items, reputations and cooldowns for every character, on one board.
+## Author: Xpariah
+## Version: 1.0.0
+## Category: Dungeons & Raids
+## IconTexture: Interface\Icons\INV_Misc_PocketWatch_01
+## SavedVariables: TallymarkDB
+
+# Core: namespace, module registry, saved data, reset clock
+Core\Init.lua
+Core\Util.lua
+Core\Time.lua
+Core\Lists.lua
+
+# What gets tracked out of the box. Edit this file (or use the options) to add things.
+Data\Tracked.lua
+
+# Modules: one file each, board order is set by their `order`. A new module is a new
+# file here plus one TM:NewModule call; nothing in Core changes.
+Modules\Character.lua
+Modules\Lockouts.lua
+Modules\Quests.lua
+Modules\Currencies.lua
+Modules\Items.lua
+Modules\Reputation.lua
+Modules\Professions.lua
+Modules\Cooldowns.lua
+Modules\PvP.lua
+Modules\Mail.lua
+Modules\InstanceCap.lua
+Modules\Darkmoon.lua
+
+# The board window and its launchers
+UI\Theme.lua
+UI\Board.lua
+UI\Launcher.lua
+
+# Options: its own window and widgets. Pages last: they list every module's page.
+Options\Widgets.lua
+Options\Window.lua
+Options\Pages.lua

@@ -1,0 +1,9 @@
+# Only what a player installs ships. Everything else stays local.
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+_dev/
+node_modules/
+.venv/
+__pycache__/
+*.zip
