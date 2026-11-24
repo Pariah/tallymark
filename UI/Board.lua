@@ -347,6 +347,7 @@ function Board:ApplySettings()
     local s = S()
     frame:SetScale(s.scale)
     frame.bg:SetAlpha(s.alpha)
+    if TM.Launcher then TM.Launcher:Paint() end
     local found
     for i, name in ipairs(UISpecialFrames) do
         if name == "TallymarkBoard" then found = i break end
