@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-Third-party files in Media/ keep their own licences (full texts beside them):
-
-- Media/Fonts/Manrope-*.ttf: Manrope, SIL Open Font License 1.1
-  (Media/Fonts/OFL-Manrope.txt). Static weights cut from the variable font.
-- Media/Fonts/IBMPlexMono-*.ttf: IBM Plex Mono, SIL Open Font License 1.1 with
-  Reserved Font Name "Plex" (Media/Fonts/OFL-IBMPlexMono.txt). Unmodified.
-- Media/Icons/*.tga (except the tally marks): Tabler Icons, MIT
-  (Media/Icons/LICENSE-Tabler.txt). Rasterized to TGA.

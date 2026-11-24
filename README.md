@@ -8,4 +8,4 @@ Copy the `Tallymark` folder into `World of Warcraft/_forever_/Interface/AddOns/`
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Bundled fonts and icons keep their own licences, listed there.
+MIT, see [LICENSE](LICENSE). Bundled fonts and icons keep their own licences, see [THIRD_PARTY.md](THIRD_PARTY.md).
