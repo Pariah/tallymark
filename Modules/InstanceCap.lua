@@ -74,7 +74,9 @@ end
 function M:OnEnable()
     self:On("PLAYER_ENTERING_WORLD", function() C_Timer.After(1, function() self:Entered() end) end)
     self:On("CHAT_MSG_SYSTEM", function(_, _, msg)
-        local name = type(msg) == "string" and ResetName(msg)
+        -- System chat arrives as a secret string while chat is locked down (combat); a reset never happens then.
+        if type(msg) ~= "string" or (issecretvalue and issecretvalue(msg)) then return end
+        local name = ResetName(msg)
         if not name then return end
         for _, e in ipairs(TM.db.history) do
             if e.name == name then e.closed = true end
