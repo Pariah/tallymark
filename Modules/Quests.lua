@@ -113,7 +113,10 @@ function M:OnEnable()
         if not id or id == 0 then return end
         if QuestIsDaily and QuestIsDaily() then logFrequency[id] = "daily"
         elseif QuestIsWeekly and QuestIsWeekly() then logFrequency[id] = "weekly" end
-        turnInNPC[id] = UnitName("npc")
+        -- In battlegrounds the NPC name comes back as a secret string; comparing it later taints us, so drop it.
+        local npc = UnitName("npc")
+        if type(npc) ~= "string" or (issecretvalue and issecretvalue(npc)) then npc = nil end
+        turnInNPC[id] = npc
     end)
     self:On("QUEST_TURNED_IN", function(_, _, questID) self:TurnedIn(questID) end)
     ScanLog()
